@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAH Solutions - Inovação em Tecnologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(45deg, #001f3f, #007bff, #00d4ff);
+            background-size: 300% 300%;
+            animation: backgroundAnimation 8s infinite alternate;
+            color: white;
+            text-align: center;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #00d4ff;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .button {
+            background-color: white;
+            color: #007bff;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .footer {
+            padding: 20px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">EAH Solutions</div>
+        <div>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <h1>Transformamos Ideias em Soluções</h1>
+        <p>Inovação e tecnologia para o seu negócio crescer.</p>
+        <button class="button">Saiba Mais</button>
+    </div>
+    
+    <div id="sobre" class="section">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa de tecnologia focada em inovação e segurança digital, fornecendo soluções para empresas e usuários.</p>
+    </div>
+    
+    <div id="servicos" class="section">
+        <h2>Nossos Serviços</h2>
+        <p>Desenvolvimento de software, automação empresarial e consultoria em segurança digital.</p>
+    </div>
+    
+    <div id="contato" class="section">
+        <h2>Entre em Contato</h2>
+        <p>Conecte-se conosco e descubra como podemos ajudar seu negócio.</p>
+        <button class="button">Fale Conosco</button>
+    </div>
+    
+    <div class="footer">&copy; 2025 EAH Solutions - Todos os direitos reservados.</div>
+</body>
+</html>
